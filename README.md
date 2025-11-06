@@ -126,8 +126,8 @@ Copyright (C) 2025 ProgrammerNomad
 - [GitHub Repository](https://github.com/ProgrammerNomad/Password-Toggler)
 - [Report Issues](https://github.com/ProgrammerNomad/Password-Toggler/issues)
 - [Chrome Extensions Docs](https://developer.chrome.com/docs/extensions/mv3/)
-- [Privacy Policy](https://programmernomad.github.io/Password-Toggler/privacy.html)
-- [Extension Homepage](https://programmernomad.github.io/Password-Toggler/)
+- [Privacy Policy](https://passwordtoggler.netlify.app/privacy.html)
+- [Extension Homepage](https://passwordtoggler.netlify.app/)
 
 ---
 
