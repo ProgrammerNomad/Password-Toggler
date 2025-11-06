@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Toggler - Chrome Extension</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    header {
+      text-align: center;
+      color: white;
+      padding: 60px 0;
+    }
+    header h1 {
+      font-size: 48px;
+      margin: 20px 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    header p {
+      font-size: 20px;
+      opacity: 0.95;
+    }
+    .badges {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .badges img {
+      margin: 0 5px;
+    }
+    .content {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      margin-top: -30px;
+    }
+    h2 {
+      color: #667eea;
+      border-bottom: 2px solid #667eea;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+    h3 {
+      color: #555;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .feature-card {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+    .feature-card strong {
+      color: #667eea;
+      font-size: 16px;
+    }
+    .btn {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 10px 10px 10px 0;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #764ba2;
+    }
+    .btn-secondary {
+      background: #555;
+    }
+    .btn-secondary:hover {
+      background: #333;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      color: #e83e8c;
+    }
+    pre {
+      background: #2d2d2d;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      color: white;
+      padding: 40px 0;
+      margin-top: 40px;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🔐 Password Toggler</h1>
+      <p>Easily toggle password visibility with multiple interaction modes</p>
+      <div class="badges">
+        <img src="https://img.shields.io/badge/Chrome-Extension-green" alt="Chrome Extension">
+        <img src="https://img.shields.io/badge/Manifest-V3-blue" alt="Manifest V3">
+        <img src="https://img.shields.io/badge/License-LGPL%202.1-orange" alt="License">
+      </div>
+      <div style="margin-top: 30px;">
+        <a href="https://github.com/ProgrammerNomad/Password-Toggler" class="btn">View on GitHub</a>
+        <a href="privacy.html" class="btn btn-secondary">Privacy Policy</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="content">
+      <p style="font-size: 18px; color: #555;">
+        A lightweight Chrome extension that allows you to easily toggle password visibility with multiple interaction modes. 
+        Perfect for developers, testers, and anyone who wants quick access to view their passwords.
+      </p>
+
+      <h2>✨ Features</h2>
+      <div class="features">
+        <div class="feature-card">
+          <strong>4 Toggle Modes</strong>
+          <p>Mouse Over (with delay), Double Click, On Focus, Ctrl Key</p>
+        </div>
+        <div class="feature-card">
+          <strong>10 Languages</strong>
+          <p>Auto-detects browser language with RTL support for Arabic</p>
+        </div>
+        <div class="feature-card">
+          <strong>Privacy First</strong>
+          <p>No data collection, works offline, open source</p>
+        </div>
+        <div class="feature-card">
+          <strong>Universal</strong>
+          <p>Works on all websites with dynamic content support</p>
+        </div>
+      </div>
+
+      <h2>📦 Installation</h2>
+      <ol>
+        <li>Clone this repository:
+          <pre>git clone https://github.com/ProgrammerNomad/Password-Toggler.git</pre>
+        </li>
+        <li>Open Chrome: <code>chrome://extensions/</code></li>
+        <li>Enable "Developer mode"</li>
+        <li>Click "Load unpacked" and select the folder</li>
+        <li>Done!</li>
+      </ol>
+
+      <h2>🚀 Usage</h2>
+      <ol>
+        <li>Right-click extension icon → Options</li>
+        <li>Choose your toggle mode (Mouse Over, Double Click, Focus, or Ctrl Key)</li>
+        <li>Test with the preview field</li>
+        <li>Visit any website and use your chosen method</li>
+      </ol>
+
+      <h2>🌍 Language Support</h2>
+      <p>Extension automatically displays in your Chrome browser's language. To change:</p>
+      <ol>
+        <li>Chrome Settings → <code>chrome://settings/languages</code></li>
+        <li>Select your language</li>
+        <li>Set as "Display Google Chrome in this language"</li>
+        <li>Restart Chrome</li>
+      </ol>
+      <p><strong>Supported:</strong> English, Spanish, Hindi, Chinese, Arabic (RTL), Portuguese, Russian, Japanese, German, French</p>
+
+      <h2>🛠️ Technical Details</h2>
+      <ul>
+        <li><strong>Manifest V3</strong> - Latest Chrome extension format</li>
+        <li><strong>ES6+ JavaScript</strong> - Modern, performant code</li>
+        <li><strong>MutationObserver</strong> - Handles dynamic content</li>
+        <li><strong>WeakSet</strong> - Efficient memory management</li>
+        <li><strong>Storage API</strong> - Persistent settings</li>
+        <li><strong>i18n API</strong> - Automatic language detection</li>
+        <li><strong>Standard Icons</strong> - 16x16, 32x32, 48x48, 128x128 (PNG format)</li>
+      </ul>
+
+      <h2>🗺️ Roadmap</h2>
+      
+      <h3>Easy Wins (Quick Implementation):</h3>
+      <ul>
+        <li>🌙 <strong>Dark Mode Support</strong> - Auto-detect system theme</li>
+        <li>📋 <strong>Context Menu Integration</strong> - Right-click to toggle passwords</li>
+        <li>⌨️ <strong>Keyboard Shortcuts</strong> - Global hotkey (Alt+Shift+P) support</li>
+        <li>⏱️ <strong>Auto-Hide Timer</strong> - Auto-hide passwords after configurable seconds</li>
+      </ul>
+
+      <h3>Enhanced UX:</h3>
+      <ul>
+        <li>💪 <strong>Password Strength Indicator</strong> - Visual strength meter with colors</li>
+        <li>👁️ <strong>Smart Detection Mode</strong> - Floating eye icon inline with fields</li>
+        <li>🌐 <strong>Per-Site Settings</strong> - Remember preferences per website</li>
+        <li>💾 <strong>Export/Import Settings</strong> - Backup/restore configuration</li>
+        <li>🔄 <strong>Toggle All Button</strong> - Toggle all password fields at once</li>
+      </ul>
+
+      <h3>Accessibility & Security:</h3>
+      <ul>
+        <li>♿ <strong>Enhanced Accessibility</strong> - ARIA labels, screen reader support</li>
+        <li>🔒 <strong>Privacy Mode</strong> - Blur effect for screen sharing protection</li>
+        <li>🔔 <strong>Security Notifications</strong> - Alerts for extended password visibility</li>
+      </ul>
+
+      <p><em>All planned features comply with Chrome Web Store policies and maintain our privacy-first approach.</em></p>
+
+      <h2>🔒 Privacy & Security</h2>
+      <ul>
+        <li>No data collection or tracking</li>
+        <li>Works completely offline</li>
+        <li>Minimal permissions (storage only)</li>
+        <li>Auto-hide on blur</li>
+        <li>Open source code</li>
+      </ul>
+      <p><a href="privacy.html">Read full Privacy Policy →</a></p>
+
+      <h2>📝 Changelog</h2>
+      <h3>Version 1.0.0 (November 2025)</h3>
+      <p><strong>Initial Release:</strong></p>
+      <ul>
+        <li>4 password toggle modes</li>
+        <li>10 language support with RTL</li>
+        <li>Manifest V3 compliance</li>
+        <li>Real-time preview</li>
+        <li>Zero data collection</li>
+        <li>Modern responsive UI</li>
+      </ul>
+
+      <h2>🤝 Contributing</h2>
+      <ol>
+        <li>Fork the repository</li>
+        <li>Create feature branch: <code>git checkout -b feature/NewFeature</code></li>
+        <li>Commit changes: <code>git commit -m 'Add NewFeature'</code></li>
+        <li>Push: <code>git push origin feature/NewFeature</code></li>
+        <li>Open Pull Request</li>
+      </ol>
+
+      <h2>📄 License</h2>
+      <p>GNU Lesser General Public License v2.1 or later</p>
+      <p>Copyright (C) 2025 ProgrammerNomad</p>
+
+      <h2>🔗 Links</h2>
+      <ul>
+        <li><a href="https://github.com/ProgrammerNomad/Password-Toggler" target="_blank">GitHub Repository</a></li>
+        <li><a href="https://github.com/ProgrammerNomad/Password-Toggler/issues" target="_blank">Report Issues</a></li>
+        <li><a href="https://developer.chrome.com/docs/extensions/mv3/" target="_blank">Chrome Extensions Docs</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>Made with ❤️ by <a href="https://github.com/ProgrammerNomad" target="_blank">ProgrammerNomad</a></p>
+      <p>
+        <a href="https://github.com/ProgrammerNomad/Password-Toggler">GitHub</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="https://github.com/ProgrammerNomad/Password-Toggler/issues">Report Issues</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
