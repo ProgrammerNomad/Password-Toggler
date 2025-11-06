@@ -1,6 +1,9 @@
 {
+   "extension_name": {
+      "message": "密码切换器"
+   },
    "extension_description": {
-      "message": "当鼠标停留在密码框时显示密码。"
+      "message": "使用多种交互模式切换密码可见性，包括鼠标悬停、双击、焦点和Ctrl键。"
    },
    "labelPreview": {
       "message": "测试用密码框:"
@@ -24,6 +27,6 @@
       "message": "鼠标在密码框上"
    },
    "optionTitle": {
-      "message": "ShowPassword 选项"
+      "message": "密码切换器 设置"
    }
 }

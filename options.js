@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 yuSing.
+ * Copyright (C) 2025 ProgrammerNomad.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -24,9 +24,30 @@ function setLocalText (name) {
   document.getElementById(name).innerHTML = chrome.i18n.getMessage(name)
 }
 
+function setDocumentDirection () {
+  // Get the UI language and set text direction for RTL languages
+  const uiLanguage = chrome.i18n.getUILanguage()
+  const rtlLanguages = ['ar', 'he', 'fa', 'ur'] // Arabic, Hebrew, Persian, Urdu
+  
+  // Check if current language is RTL
+  const isRTL = rtlLanguages.some(lang => uiLanguage.startsWith(lang))
+  
+  if (isRTL) {
+    document.documentElement.setAttribute('dir', 'rtl')
+    document.body.style.direction = 'rtl'
+  } else {
+    document.documentElement.setAttribute('dir', 'ltr')
+    document.body.style.direction = 'ltr'
+  }
+  
+  // Set the lang attribute
+  document.documentElement.setAttribute('lang', uiLanguage)
+}
+
 function localization () {
   const localTexts = ['optionTitle', 'labelWhen', 'optMouseOver', 'optDblClick', 'optFocus', 'optCtrl', 'labelWait', 'labelPreview']
   localTexts.forEach(setLocalText)
+  setDocumentDirection()
 }
 
 function loadSetting () {
@@ -34,11 +55,19 @@ function loadSetting () {
     if ('behave' in data) {
       selectBehave.selectedIndex = data.behave
       inputWait.value = data.wait
-      if (selectBehave.selectedIndex !== 0) {
-        document.getElementById('divWait').style.display = 'none'
-      }
+      toggleWaitVisibility()
     }
   })
+}
+
+function toggleWaitVisibility () {
+  const divWait = document.getElementById('divWait')
+  // Show wait input only for mouse-over mode (index 0)
+  if (selectBehave.selectedIndex === 0) {
+    divWait.style.display = 'flex'
+  } else {
+    divWait.style.display = 'none'
+  }
 }
 
 function saveSetting () {
@@ -46,22 +75,42 @@ function saveSetting () {
     behave: selectBehave.selectedIndex,
     wait: inputWait.value
   })
-  window.location.reload()
+  
+  // Show save confirmation
+  const statusIndicator = document.querySelector('.status-indicator')
+  if (statusIndicator) {
+    statusIndicator.style.background = '#4caf50'
+    statusIndicator.textContent = 'Settings Saved!'
+    setTimeout(() => {
+      statusIndicator.textContent = 'Settings Auto-Saved'
+    }, 2000)
+  }
+  
+  toggleWaitVisibility()
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   selectBehave = document.getElementById('selectBehave')
   inputWait = document.getElementById('inputWait')
 
-  selectBehave.addEventListener('change', saveSetting, false)
+  selectBehave.addEventListener('change', () => {
+    saveSetting()
+    // No need to reload, just update UI
+  }, false)
+  
   inputWait.addEventListener('blur', saveSetting, false)
+  
+  inputWait.addEventListener('keypress', e => {
+    if (e.keyCode === KEY_ENTER || e.key === 'Enter') {
+      saveSetting()
+      inputWait.blur()
+    }
+  }, false)
 
   document.getElementById('passwordTest').addEventListener('keydown', e => {
     if (e.keyCode === KEY_ENTER) {
       if (document.getElementById('passwordTest').value.toLowerCase() === 'taiwan') {
         window.location = 'http://en.wikipedia.org/wiki/Taiwan'
-      } else {
-        window.location.reload()
       }
     }
   }, false)

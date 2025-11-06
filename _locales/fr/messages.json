@@ -1,0 +1,32 @@
+{
+   "extension_name": {
+      "message": "Password Toggler"
+   },
+   "extension_description": {
+      "message": "Basculez la visibilité du mot de passe avec plusieurs modes d'interaction, y compris le survol de la souris, le double-clic, le focus et la touche Ctrl."
+   },
+   "labelPreview": {
+      "message": "Champ de mot de passe d'aperçu:"
+   },
+   "labelWait": {
+      "message": "Attendre:"
+   },
+   "labelWhen": {
+      "message": "Quand afficher le mot de passe:"
+   },
+   "optCtrl": {
+      "message": "Appuyer sur la touche Ctrl"
+   },
+   "optDblClick": {
+      "message": "Double-clic"
+   },
+   "optFocus": {
+      "message": "Lors du focus"
+   },
+   "optMouseOver": {
+      "message": "Survol de la souris"
+   },
+   "optionTitle": {
+      "message": "Paramètres de Password Toggler"
+   }
+}

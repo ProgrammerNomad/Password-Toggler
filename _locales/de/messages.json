@@ -1,0 +1,32 @@
+{
+   "extension_name": {
+      "message": "Password Toggler"
+   },
+   "extension_description": {
+      "message": "Schalten Sie die Passwortsichtbarkeit mit mehreren Interaktionsmodi um, einschließlich Maus über, Doppelklick, Fokus und Strg-Taste."
+   },
+   "labelPreview": {
+      "message": "Vorschau-Passwortfeld:"
+   },
+   "labelWait": {
+      "message": "Warten:"
+   },
+   "labelWhen": {
+      "message": "Wann Passwort anzeigen:"
+   },
+   "optCtrl": {
+      "message": "Strg-Taste drücken"
+   },
+   "optDblClick": {
+      "message": "Doppelklick"
+   },
+   "optFocus": {
+      "message": "Beim Fokus"
+   },
+   "optMouseOver": {
+      "message": "Maus über"
+   },
+   "optionTitle": {
+      "message": "Password Toggler Einstellungen"
+   }
+}

@@ -1,0 +1,32 @@
+{
+   "extension_name": {
+      "message": "Password Toggler"
+   },
+   "extension_description": {
+      "message": "Переключайте видимость пароля с несколькими режимами взаимодействия, включая наведение мыши, двойной щелчок, фокус и клавишу Ctrl."
+   },
+   "labelPreview": {
+      "message": "Предпросмотр поля пароля:"
+   },
+   "labelWait": {
+      "message": "Подождите:"
+   },
+   "labelWhen": {
+      "message": "Когда показывать пароль:"
+   },
+   "optCtrl": {
+      "message": "Нажать клавишу Ctrl"
+   },
+   "optDblClick": {
+      "message": "Двойной щелчок"
+   },
+   "optFocus": {
+      "message": "При фокусе"
+   },
+   "optMouseOver": {
+      "message": "Наведение мыши"
+   },
+   "optionTitle": {
+      "message": "Настройки Password Toggler"
+   }
+}

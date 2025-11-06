@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Password Toggler",
+  "name": "__MSG_extension_name__",
   "version": "1.0.0",
   "description": "__MSG_extension_description__",
   "default_locale": "en",
@@ -9,10 +9,10 @@
   ],
   "options_page": "options.html",
   "icons": {
-    "16": "icon32.png",
-    "32": "icon32.png",
-    "64": "icon.png",
-    "128": "icon.png"
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
   },
   "content_scripts": [
     {
@@ -21,10 +21,14 @@
         "https://*/*"
       ],
       "js": [
-        "showPassword.js"
+        "passwordToggler.js"
       ],
       "run_at": "document_end",
       "all_frames": true
     }
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
   ]
 }

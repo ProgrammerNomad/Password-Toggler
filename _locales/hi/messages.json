@@ -1,0 +1,32 @@
+{
+   "extension_name": {
+      "message": "Password Toggler"
+   },
+   "extension_description": {
+      "message": "माउस ओवर, डबल क्लिक, फोकस और Ctrl कुंजी सहित कई इंटरैक्शन मोड के साथ पासवर्ड दृश्यता टॉगल करें।"
+   },
+   "labelPreview": {
+      "message": "पूर्वावलोकन पासवर्ड फ़ील्ड:"
+   },
+   "labelWait": {
+      "message": "प्रतीक्षा करें:"
+   },
+   "labelWhen": {
+      "message": "पासवर्ड कब दिखाएं:"
+   },
+   "optCtrl": {
+      "message": "Ctrl कुंजी दबाएं"
+   },
+   "optDblClick": {
+      "message": "डबल क्लिक"
+   },
+   "optFocus": {
+      "message": "फोकस पर"
+   },
+   "optMouseOver": {
+      "message": "माउस ओवर"
+   },
+   "optionTitle": {
+      "message": "Password Toggler सेटिंग्स"
+   }
+}

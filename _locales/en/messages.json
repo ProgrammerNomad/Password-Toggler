@@ -1,6 +1,9 @@
 {
+   "extension_name": {
+      "message": "Password Toggler"
+   },
    "extension_description": {
-      "message": "Show password when mouse over password fields."
+      "message": "Toggle password visibility with multiple interaction modes including mouse over, double click, focus, and Ctrl key."
    },
    "labelPreview": {
       "message": "Preview Password field:"
@@ -24,6 +27,6 @@
       "message": "Mouse over"
    },
    "optionTitle": {
-      "message": "ShowPassword Option"
+      "message": "Password Toggler Settings"
    }
 }

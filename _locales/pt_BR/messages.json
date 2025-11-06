@@ -1,0 +1,32 @@
+{
+   "extension_name": {
+      "message": "Password Toggler"
+   },
+   "extension_description": {
+      "message": "Alterne a visibilidade da senha com vários modos de interação, incluindo passar o mouse, clique duplo, foco e tecla Ctrl."
+   },
+   "labelPreview": {
+      "message": "Campo de senha de visualização:"
+   },
+   "labelWait": {
+      "message": "Aguardar:"
+   },
+   "labelWhen": {
+      "message": "Quando mostrar a senha:"
+   },
+   "optCtrl": {
+      "message": "Pressionar tecla Ctrl"
+   },
+   "optDblClick": {
+      "message": "Clique duplo"
+   },
+   "optFocus": {
+      "message": "Ao focar"
+   },
+   "optMouseOver": {
+      "message": "Passar o mouse"
+   },
+   "optionTitle": {
+      "message": "Configurações do Password Toggler"
+   }
+}

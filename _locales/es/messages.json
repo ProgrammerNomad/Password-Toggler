@@ -1,0 +1,32 @@
+{
+   "extension_name": {
+      "message": "Password Toggler"
+   },
+   "extension_description": {
+      "message": "Alterna la visibilidad de contraseñas con múltiples modos de interacción incluyendo pasar el ratón, doble clic, enfoque y tecla Ctrl."
+   },
+   "labelPreview": {
+      "message": "Campo de contraseña de vista previa:"
+   },
+   "labelWait": {
+      "message": "Esperar:"
+   },
+   "labelWhen": {
+      "message": "Cuándo mostrar la contraseña:"
+   },
+   "optCtrl": {
+      "message": "Presionar tecla Ctrl"
+   },
+   "optDblClick": {
+      "message": "Doble clic"
+   },
+   "optFocus": {
+      "message": "Al enfocar"
+   },
+   "optMouseOver": {
+      "message": "Pasar el ratón"
+   },
+   "optionTitle": {
+      "message": "Configuración de Password Toggler"
+   }
+}

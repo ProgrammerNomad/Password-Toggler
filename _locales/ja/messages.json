@@ -1,0 +1,32 @@
+{
+   "extension_name": {
+      "message": "Password Toggler"
+   },
+   "extension_description": {
+      "message": "マウスオーバー、ダブルクリック、フォーカス、Ctrlキーを含む複数のインタラクションモードでパスワードの表示を切り替えます。"
+   },
+   "labelPreview": {
+      "message": "プレビューパスワードフィールド:"
+   },
+   "labelWait": {
+      "message": "待機:"
+   },
+   "labelWhen": {
+      "message": "パスワードを表示するタイミング:"
+   },
+   "optCtrl": {
+      "message": "Ctrlキーを押す"
+   },
+   "optDblClick": {
+      "message": "ダブルクリック"
+   },
+   "optFocus": {
+      "message": "フォーカス時"
+   },
+   "optMouseOver": {
+      "message": "マウスオーバー"
+   },
+   "optionTitle": {
+      "message": "Password Toggler設定"
+   }
+}

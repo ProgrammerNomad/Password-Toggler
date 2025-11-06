@@ -1,0 +1,32 @@
+{
+   "extension_name": {
+      "message": "Password Toggler"
+   },
+   "extension_description": {
+      "message": "تبديل رؤية كلمة المرور مع أوضاع تفاعل متعددة بما في ذلك تمرير الماوس، النقر المزدوج، التركيز ومفتاح Ctrl."
+   },
+   "labelPreview": {
+      "message": "معاينة حقل كلمة المرور:"
+   },
+   "labelWait": {
+      "message": "انتظر:"
+   },
+   "labelWhen": {
+      "message": "متى تظهر كلمة المرور:"
+   },
+   "optCtrl": {
+      "message": "اضغط على مفتاح Ctrl"
+   },
+   "optDblClick": {
+      "message": "نقرة مزدوجة"
+   },
+   "optFocus": {
+      "message": "عند التركيز"
+   },
+   "optMouseOver": {
+      "message": "تمرير الماوس"
+   },
+   "optionTitle": {
+      "message": "إعدادات Password Toggler"
+   }
+}
