@@ -63,6 +63,30 @@ Extension automatically displays in your Chrome browser's language. To change:
 - `options.js` - Settings page logic
 - `options.html` - Settings page UI
 
+## Roadmap
+
+### Planned Features
+
+**Easy Wins (Quick Implementation):**
+- **Dark Mode Support** - Auto-detect system theme
+- **Context Menu Integration** - Right-click to toggle passwords
+- **Keyboard Shortcuts** - Global hotkey (Alt+Shift+P) support
+- **Auto-Hide Timer** - Auto-hide passwords after configurable seconds
+
+**Enhanced UX:**
+- **Password Strength Indicator** - Visual strength meter with colors
+- **Smart Detection Mode** - Floating eye icon inline with fields
+- **Per-Site Settings** - Remember preferences per website
+- **Export/Import Settings** - Backup/restore configuration
+- **Toggle All Button** - Toggle all password fields at once
+
+**Accessibility & Security:**
+- **Enhanced Accessibility** - ARIA labels, screen reader support
+- **Privacy Mode** - Blur effect for screen sharing protection
+- **Security Notifications** - Alerts for extended password visibility
+
+All planned features comply with Chrome Web Store policies and maintain our privacy-first approach.
+
 ## Changelog
 
 ### Version 1.0.0 (November 2025)
