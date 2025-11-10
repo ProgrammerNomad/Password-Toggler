@@ -1,6 +1,6 @@
 # Password Toggler
 
-[![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-green)](https://github.com/ProgrammerNomad/Password-Toggler)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-green)](https://chromewebstore.google.com/detail/password-toggler/pffohdhnjbkadbncplangncglbkfgipe)
 [![Manifest Version](https://img.shields.io/badge/Manifest-V3-blue)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![License](https://img.shields.io/badge/License-LGPL%202.1-orange)](LICENSE)
 
@@ -17,18 +17,20 @@ A lightweight Chrome extension that allows you to easily toggle password visibil
 
 ## Installation
 
-1. Clone this repository:
+1. **Easiest way - Install from Chrome Web Store:**
+   - Visit: https://chromewebstore.google.com/detail/password-toggler/pffohdhnjbkadbncplangncglbkfgipe
+   - Click "Add to Chrome"
+   - Confirm permissions
+   - Done!
+
+2. **Manual installation (for development):**
+   - Clone this repository:
    ```bash
    git clone https://github.com/ProgrammerNomad/Password-Toggler.git
    ```
-
-2. Open Chrome: `chrome://extensions/`
-
-3. Enable "Developer mode"
-
-4. Click "Load unpacked" and select the folder
-
-5. Done!
+   - Open Chrome: `chrome://extensions/`
+   - Enable "Developer mode"
+   - Click "Load unpacked" and select the folder
 
 ## Usage
 
@@ -123,6 +125,7 @@ Copyright (C) 2025 ProgrammerNomad
 
 ## Links
 
+- [Chrome Web Store](https://chromewebstore.google.com/detail/password-toggler/pffohdhnjbkadbncplangncglbkfgipe) - Install the extension
 - [GitHub Repository](https://github.com/ProgrammerNomad/Password-Toggler)
 - [Report Issues](https://github.com/ProgrammerNomad/Password-Toggler/issues)
 - [Chrome Extensions Docs](https://developer.chrome.com/docs/extensions/mv3/)
